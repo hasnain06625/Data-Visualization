@@ -5,7 +5,6 @@ df = pd.read_csv("sales_data.csv")
 
 print(df.head())
 
-
 print("Total Sales:", df["Total_Sales"].sum())
 
 product_sales = df.groupby("Product")["Total_Sales"].sum()
@@ -29,7 +28,6 @@ plt.show()
 
 print("\nBest Selling Product:")
 print(product_sales.idxmax())
-
 print("\nInsights:")
 print("1. Total sales calculated successfully.")
 print("2. Bar chart shows product-wise sales.")
